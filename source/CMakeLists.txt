@@ -16,7 +16,7 @@ add_library(nbcraft-core STATIC
     common/utility/AlignmentHelper.cpp
     common/utility/JsonParser.cpp
     common/utility/Singleton.cpp
-	common/utility/ByteBuffer.cpp
+    common/utility/ByteBuffer.cpp
     common/Utils.cpp
     client/app/App.cpp
     client/app/AppPlatform.cpp
@@ -503,6 +503,7 @@ add_library(nbcraft-core STATIC
     renderer/hal/base/ShaderConstantWithDataBase.cpp
     renderer/hal/base/ShaderContextBase.cpp
     renderer/hal/base/ShaderProgramBase.cpp
+    renderer/hal/base/VertexBufferStateBase.cpp
     renderer/hal/base/TextureBase.cpp
     renderer/hal/enums/BlendTarget_JsonParser.cpp
     renderer/hal/enums/ComparisonFunc_JsonParser.cpp
@@ -518,6 +519,7 @@ add_library(nbcraft-core STATIC
     renderer/hal/null/AlphaStateNull.cpp
     renderer/hal/null/RenderStateNull.cpp
     renderer/hal/null/FogStateNull.cpp
+    renderer/hal/null/VertexBufferStateNull.cpp
     renderer/hal/interface/AlphaState.cpp
     renderer/hal/interface/BlendState.cpp
     renderer/hal/interface/Buffer.cpp
