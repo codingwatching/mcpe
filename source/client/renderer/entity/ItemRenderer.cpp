@@ -72,7 +72,7 @@ void ItemRenderer::render(const Entity& entity, const Vec3& pos, float rot, floa
 
 	float yOffset = Mth::sin((float(itemEntity.m_age) + a) / 10.0f + itemEntity.m_bobOffs);
 	const ItemStack& itemStack = itemEntity.m_itemStack;
-	if (itemStack.isEmpty())
+	if (!itemStack.isValid()) // was isEmpty, but we need to render taken items
 		return;
 
 	int itemsToRender = 1;
